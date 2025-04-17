@@ -1,4 +1,5 @@
-# synthetic-licence-plate-generation
+# synthetic licence plate generation
+Author: Lars G. and Tom-Marvin Rathmann
 
 This project was created as part of a master's thesis by Lars G. and further developed by Tom-Marvin Rathmann, first in a project thesis and then in a second master's thesis.
 
