@@ -1,0 +1,44 @@
+####### Start yaml-File documentation
+#Created on Dez 16 2024
+#@author: Tom-Marvin Rathmann
+
+
+#This configuration file defines all relevant parameters for generating synthetic
+#license plate images with the image process pipeline in this project.
+
+#The configuration enables control over the synthetic image generation 
+#pipeline. This includes:
+#    - The number of synthetic variations per original image
+#    - The mode of effect application (random, specified, or none)
+#    - Specific settings for different categories of visual effects, such as:
+#        * Lighting conditions (e.g. bright or dark scenes)
+#        * Plate surface effects (e.g. dirt, snow, shadow)
+#        * Weather simulations (e.g. fog, rain, snow)
+#        * Headlight settings (on/off/random)
+####### End yaml-File documentation
+
+
+
+#Number of artificially generated license plate images per source image (integer greater than 0)
+number_of_variations: 20
+
+#Selection how random effects should be generated: random (random), based on defined selection (specified) or no effects (none)
+effect_setting: specified
+
+#Effects to be applied. Available effect types are: Light effect, license plate effect, weather effect and spotlight effect
+#Options for strength: ('subtle','mild','moderate','strong','intense')
+effects:
+  - type: light_setting        #Options: bright, dark
+    mode: bright     
+    strength: intense
+
+  - type: plate_effect         #Options: ['dirt'],['snow'],['shadow'],['dirt','shadow'],['snow','shadow']
+    mode: ['dirt','shadow']        
+    strength: subtle
+
+  - type: weather_effect       #Options: ['snow'],['rain'],['fog'],['sun_reflection'],['snow', 'fog'],['snow','sun_reflection'],['rain','fog'],['sun_reflection','fog'],['sun_reflection','snow', 'fog']
+    mode: ['fog']
+    strength: subtle
+
+  - type: headlights           #Options on, off, random
+    mode: 'off'

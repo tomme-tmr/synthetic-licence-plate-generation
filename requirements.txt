@@ -1,0 +1,12 @@
+noise==1.2.2
+numpy==1.26.4
+opencv-python==4.9.0.80
+pillow==10.3.0
+openai
+scikit-learn
+pandas
+jiwer
+pyyaml
+torch
+torchvision
+timm
