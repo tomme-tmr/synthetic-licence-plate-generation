@@ -14,7 +14,7 @@ The python script “evaluate_gpt_results.py” is used to evaluate the quality 
 Setup and run the pipeline:
 
 1. open the folder in the terminal
-cd '<folder path>'
+cd '_folder path_'
 
 2. create a virtual environment
 python3 -m venv venvLP
