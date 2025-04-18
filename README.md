@@ -13,17 +13,27 @@ The python script “evaluate_gpt_results.py” is used to evaluate the quality 
 
 Setup and run the pipeline:
 
-1. open the folder in the terminal
+1. open the folder in the terminal:
 cd '_folder path_'
 
-2. create a virtual environment
+2. create a virtual environment:
 python3 -m venv venvLP
 
-3. activate the virtual environment
+3. activate the virtual environment:
 source venvLP/bin/activate
 
-4. install the required packages
+4. install the required packages:
 python -m pip install -r requirements.txt
 
-5. run the image processing pipeline
+6. run the image processing pipeline:
 python3 full_process_bereinigt.py
+
+------------------------------------------------------
+If you want to run the licence plate extraction via OpenAI
+1. Add your API-Key in the config.py file
+
+2. run the extraction script:
+python3 gpt_extraction.py
+
+3. Evaluate the results:
+python3 evaluate_gpt_results.py
