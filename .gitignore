@@ -2,6 +2,9 @@
 **/.DS_Store
 venvLP
 *.png
+!HU-Plakette.png
+!Registration_Sticker_BW.png
+
 
 
 # Byte-compiled / optimized / DLL files
