@@ -6,7 +6,7 @@ This project was created as part of a master's thesis by Lars G. and further dev
 The aim of the project is to generate synthetic data for the research field of automatic license plate recognition (ALPR). Therefor License plates on existing vehicle images are to be replaced by synthetic German license plates in order to be able to automatically generate training data for training purposes in the field of machine learning.
 In the further developments, additional functionalities were implemented to artificially create synthetic weather artifacts in order to generate training data under difficult conditions.
 
-The python script “full_process_bereinigt.py” combines all the functionalities and thus represents the image processing pipeline.
+The python script “full_process_bereinigt.py” combines all the functionalities and represents the image processing pipeline.
 The python script “gpt_extraction.py” is used to extract features using an OpenAI model.
 The python script “evaluate_gpt_results.py” is used to evaluate the quality of the license plate extraction using GPT.
 
